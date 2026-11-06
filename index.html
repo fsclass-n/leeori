@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="이오리 - Business-Minded Developer 포트폴리오. 경영학 기반의 문제 정의, 데이터 분석과 풀스택 구현으로 비즈니스 성과를 만드는 개발자입니다.">
+    <meta name="keywords" content="이오리, 포트폴리오, 데이터 분석, 비즈니스 개발자, 풀스택, Python, Spring, React, RPA, AI">
+    <meta name="author" content="이오리">
+    <meta name="theme-color" content="#050507">
+    <title>이오리 | Business-Minded Developer Portfolio</title>
+    <link rel="canonical" href="https://leeori.netlify.app/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="이오리 | Business-Minded Developer Portfolio">
+    <meta property="og:description" content="비즈니스 문제를 데이터로 읽고, 코드로 증명합니다. DATA → DECISION → PRODUCT">
+    <meta property="og:url" content="https://leeori.netlify.app/">
+    <meta property="og:image" content="https://leeori.netlify.app/images/portfolio.webp">
+    <meta property="og:image:alt" content="이오리 사이버펑크 테마 포트폴리오 첫 화면">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts: Orbitron(display) / JetBrains Mono(terminal) / Noto Sans KR(body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">본문으로 건너뛰기</a>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-scanlines" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar" aria-label="주요 메뉴">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="홈으로">
+                <span class="logo-prompt">~/</span>ORI<span class="logo-cursor">_</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-section="hero"><span class="nav-index">00</span>home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about"><span class="nav-index">01</span>about</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills"><span class="nav-index">02</span>skills</a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio"><span class="nav-index">03</span>projects</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta" data-section="contact"><span class="nav-index">04</span>contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="메뉴 열기" aria-controls="navLinks" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main" tabindex="-1">
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-bg-shapes" aria-hidden="true">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-boot animate-item"><span class="boot-prompt">&gt;</span> system.init(<span class="str">"portfolio"</span>) <span class="boot-ok">// status: ONLINE</span></p>
+                <p class="hero-greeting animate-item">Business-Minded Developer</p>
+                <h1 class="hero-name animate-item">
+                    <span class="glitch" data-text="이오리">이오리</span>
+                    <span class="hero-name-en">LEE ORI</span>
+                </h1>
+                <div class="hero-title-wrapper animate-item">
+                    <span class="hero-title-label">$ role --now</span>
+                    <span class="hero-title-dynamic" id="dynamicTitle" aria-hidden="true">Data-Driven Builder</span>
+                    <span class="sr-only">Data-Driven Builder</span>
+                    <span class="cursor-blink" aria-hidden="true">▌</span>
+                </div>
+                <p class="hero-slogan animate-item">
+                    비즈니스 문제를 <mark class="hl-pink">데이터로 읽고</mark>,<br>
+                    <mark class="hl-green">코드로 증명</mark>합니다.
+                </p>
+                <p class="hero-description animate-item">
+                    경영학에서 배운 문제 정의력에 Python 데이터 분석과 풀스택 구현을 더해,
+                    아이디어를 측정 가능한 성과를 내는 서비스로 만듭니다.
+                </p>
+                <ul class="hero-keywords animate-item" aria-label="핵심 역량 키워드">
+                    <li class="keyword-card kw-pink">
+                        <span class="kw-index">01</span>
+                        <strong>BUSINESS INSIGHT</strong>
+                        <span>경영학으로 문제를 정의합니다</span>
+                    </li>
+                    <li class="keyword-card kw-yellow">
+                        <span class="kw-index">02</span>
+                        <strong>DATA-DRIVEN</strong>
+                        <span>데이터로 전략을 검증합니다</span>
+                    </li>
+                    <li class="keyword-card kw-green">
+                        <span class="kw-index">03</span>
+                        <strong>BUILD &amp; SHIP</strong>
+                        <span>코드로 서비스를 배포합니다</span>
+                    </li>
+                </ul>
+                <div class="hero-buttons animate-item">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-terminal" aria-hidden="true"></i> ./view_projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> ./contact --hire
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual animate-item">
+                <div class="terminal hero-terminal" aria-label="프로필 터미널">
+                    <div class="terminal-bar">
+                        <span class="dot dot-pink"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                        <span class="terminal-title">ori@portfolio: ~/profile</span>
+                    </div>
+                    <pre class="terminal-body" id="heroTerminal"><code><span class="t-prompt">$</span> whoami
+<span class="t-out">이오리 <span class="t-dim">/ Lee Ori</span></span>
+<span class="t-prompt">$</span> cat profile.json
+<span class="t-out">{
+  <span class="t-key">"role"</span>:  <span class="t-str">"Business-Minded Developer"</span>,
+  <span class="t-key">"major"</span>: <span class="t-str">"경영학 · 한국 오리대학교"</span>,
+  <span class="t-key">"stack"</span>: [<span class="t-str">"Python"</span>, <span class="t-str">"Spring"</span>, <span class="t-str">"React"</span>, <span class="t-str">"SQL"</span>],
+  <span class="t-key">"focus"</span>: <span class="t-str">"data → decision → product"</span>,
+  <span class="t-key">"shipped"</span>: <span class="t-num">4</span> <span class="t-dim">// live services</span>
+}</span>
+<span class="t-prompt">$</span> ./run --mode=interview
+<span class="t-out t-ok">&gt; status: READY <span class="t-blink">■</span></span></code></pre>
+                </div>
+                <div class="hero-stats" aria-label="주요 지표">
+                    <div class="stat"><span class="stat-value" data-count="4">4</span><span class="stat-label">배포 서비스</span></div>
+                    <div class="stat"><span class="stat-value" data-count="1348">1,348</span><span class="stat-label">시간 실무 교육</span></div>
+                    <div class="stat"><span class="stat-value" data-count="3">3</span><span class="stat-label">데이터 소스 자동 수집</span></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="아래로 스크롤">
+            <span class="scroll-line"></span>
+            <span>scroll</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 01. ABOUT</span>
+                <h2 class="section-title">숫자로 설명할 수 있는 개발자</h2>
+                <p class="section-sub">경영학 전공자의 시선으로 '왜 만들어야 하는지'를 먼저 묻고, 데이터와 코드로 답합니다.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-cards">
+                    <article class="about-card neon-pink" data-aos>
+                        <div class="about-card-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+                        <p class="about-card-highlight">Define</p>
+                        <h3>비즈니스 문제 정의</h3>
+                        <p>경영전략·마케팅조사 과정에서 익힌 프레임으로 고객의 불편과 KPI를 먼저 정의하고 개발 범위를 결정합니다.</p>
+                    </article>
+                    <article class="about-card neon-yellow" data-aos>
+                        <div class="about-card-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                        <p class="about-card-highlight">Analyze</p>
+                        <h3>데이터 기반 의사결정</h3>
+                        <p>Python으로 수집·정제·시각화한 데이터를 근거로 추천 로직과 가격 전략을 설계하고 결과를 수치로 검증합니다.</p>
+                    </article>
+                    <article class="about-card neon-green" data-aos>
+                        <div class="about-card-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+                        <p class="about-card-highlight">Deliver</p>
+                        <h3>실제 서비스 구현·배포</h3>
+                        <p>화면·API·DB·클라우드 배포까지 하나의 흐름으로 구현하고, 사용자가 바로 쓸 수 있는 서비스로 완성합니다.</p>
+                    </article>
+                </div>
+                <div class="about-detail" data-aos>
+                    <div class="about-text">
+                        <p class="about-lead"><span class="code-comment">/* 경영학 × 개발 */</span></p>
+                        <p>
+                            <strong>한국 오리대학교 경영학과</strong>를 졸업하며 경영전략, 경영통계, 마케팅조사론, 경영정보시스템(MIS)을 중심으로
+                            '문제를 숫자로 정의하고 의사결정하는 방법'을 배웠습니다. 졸업 후에는
+                            <strong>생성형AI와 챗GPT를 활용한 빅데이터 분석 &amp; 자동화 시스템 구축 과정(1,000시간)</strong>과
+                            <strong>심화_생성형 AI와 AWS 클라우드를 활용한 풀스택 &amp; 자동화 실무 개발 과정(348시간)</strong>을 수료하며
+                            분석 결과를 실제 서비스로 구현하는 역량을 더했습니다.
+                        </p>
+                        <p>
+                            저는 기능을 '만드는 것'보다 <em>그 기능이 어떤 비즈니스 지표를 움직이는지</em>에 집중합니다.
+                            여행 특가 비교 시간을 95% 줄인 추천 서비스, 실구매가 기준으로 구매 타이밍을 점수화한 가격 분석 서비스처럼
+                            사용자의 결정을 돕는 데이터 제품을 기획부터 배포까지 직접 만들어 왔습니다.
+                        </p>
+                        <p>
+                            <em>Codex·Claude·Gemini를 개발 파트너</em>로 활용해 구현 속도를 높이되, 결과는 반드시 직접 검증합니다.
+                            빠르게 만들고, 숫자로 확인하고, 다음 개선으로 연결하는 사이클이 제 일하는 방식입니다.
+                        </p>
+                    </div>
+                    <div class="about-side">
+                        <div class="terminal edu-terminal">
+                            <div class="terminal-bar">
+                                <span class="dot dot-pink"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                                <span class="terminal-title">education.log</span>
+                            </div>
+                            <div class="terminal-body">
+                                <p><span class="t-prompt">$</span> cat education.log</p>
+                                <dl class="edu-list">
+                                    <div class="edu-row"><dt>UNIV</dt><dd>한국 오리대학교 경영학과 (학사)</dd></div>
+                                    <div class="edu-row"><dt>PERIOD</dt><dd>2020. 03 – 2024. 02 졸업</dd></div>
+                                    <div class="edu-row"><dt>GPA</dt><dd><span class="t-num">3.87</span> / 4.5 <span class="t-dim">(전공 3.95)</span></dd></div>
+                                    <div class="edu-row"><dt>COURSES</dt><dd>경영전략 · 경영통계 · 마케팅조사론 · 경영정보시스템(MIS) · 재무관리 · 회계원리 · 생산운영관리 · 데이터베이스개론</dd></div>
+                                </dl>
+                            </div>
+                        </div>
+                        <ol class="about-timeline" aria-label="교육 이력">
+                            <li class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <time class="timeline-date" datetime="2026-12">2026. 12 · 수료</time>
+                                    <h4>두드림컴퓨터학원 분당미금점</h4>
+                                    <p>심화_생성형 AI와 AWS 클라우드를 활용한 풀스택 &amp; 자동화 실무 개발 과정 · 348시간</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <time class="timeline-date" datetime="2026-10">2026. 10 · 수료</time>
+                                    <h4>두드림컴퓨터학원 분당미금점</h4>
+                                    <p>생성형AI와 챗GPT를 활용한 빅데이터 분석 &amp; 자동화 시스템 구축 과정 · 1,000시간</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <time class="timeline-date" datetime="2024-02">2024. 02 · 졸업</time>
+                                    <h4>한국 오리대학교</h4>
+                                    <p>경영학과 학사 졸업 · GPA 3.87/4.5</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 02. SKILLS</span>
+                <h2 class="section-title">TECH STACK</h2>
+                <p class="section-sub">비즈니스 → 데이터 → 서비스로 이어지는 전 과정을 다룹니다.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category neon-pink" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+                        <h3>Business &amp; Data Analytics</h3>
+                    </div>
+                    <p class="skill-description">KPI를 정의하고 SQL·통계로 가설을 검증합니다. 분석 결과는 의사결정자가 이해할 수 있는 리포트로 전달합니다.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-chart-pie" aria-hidden="true"></i> KPI 설계</span>
+                        <span class="skill-tag"><i class="fas fa-database" aria-hidden="true"></i> SQL 분석</span>
+                        <span class="skill-tag"><i class="fas fa-square-root-variable" aria-hidden="true"></i> 경영통계</span>
+                        <span class="skill-tag"><i class="fas fa-file-excel" aria-hidden="true"></i> Excel</span>
+                        <span class="skill-tag"><i class="fas fa-chart-line" aria-hidden="true"></i> 데이터 시각화</span>
+                        <span class="skill-tag"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i> 시장 조사</span>
+                    </div>
+                </div>
+
+                <div class="skill-category neon-yellow" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fab fa-python" aria-hidden="true"></i></div>
+                        <h3>Python &amp; AI</h3>
+                    </div>
+                    <p class="skill-description">수집·정제·시각화를 자동화하고, 머신러닝과 생성형 AI를 추천·예측 기능에 적용합니다.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                        <span class="skill-tag"><i class="fas fa-table" aria-hidden="true"></i> pandas</span>
+                        <span class="skill-tag"><i class="fas fa-brain" aria-hidden="true"></i> scikit-learn</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired" aria-hidden="true"></i> 딥러닝</span>
+                        <span class="skill-tag"><i class="fas fa-robot" aria-hidden="true"></i> RPA · Playwright</span>
+                        <span class="skill-tag"><i class="fas fa-spider" aria-hidden="true"></i> 웹 크롤링</span>
+                        <span class="skill-tag"><i class="fas fa-chart-area" aria-hidden="true"></i> Plotly</span>
+                        <span class="skill-tag"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> Gemini API</span>
+                    </div>
+                </div>
+
+                <div class="skill-category neon-green" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <p class="skill-description">HTML·CSS로 반응형 구조를 만들고, JavaScript·React로 데이터가 살아있는 화면을 구현합니다.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-html5" aria-hidden="true"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-js-square" aria-hidden="true"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-react" aria-hidden="true"></i> React</span>
+                        <span class="skill-tag"><i class="fab fa-bootstrap" aria-hidden="true"></i> Bootstrap 5</span>
+                    </div>
+                </div>
+
+                <div class="skill-category neon-pink" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+                        <h3>Backend</h3>
+                    </div>
+                    <p class="skill-description">Java·Spring Boot와 Python·FastAPI로 서버 로직과 API를 설계하고, 인증·검증 같은 기본기를 지킵니다.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-java" aria-hidden="true"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-leaf" aria-hidden="true"></i> Spring Boot</span>
+                        <span class="skill-tag"><i class="fas fa-bolt" aria-hidden="true"></i> FastAPI</span>
+                        <span class="skill-tag"><i class="fas fa-code" aria-hidden="true"></i> Thymeleaf</span>
+                        <span class="skill-tag"><i class="fas fa-key" aria-hidden="true"></i> 세션 인증 · BCrypt</span>
+                    </div>
+                </div>
+
+                <div class="skill-category neon-yellow" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+                        <h3>Database</h3>
+                    </div>
+                    <p class="skill-description">관계형 스키마와 SQL을 설계하고, 중복 없는 이력 데이터를 MySQL 호환 클라우드 DB에 적재합니다.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-database" aria-hidden="true"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-cloud" aria-hidden="true"></i> TiDB Cloud</span>
+                        <span class="skill-tag"><i class="fas fa-diagram-project" aria-hidden="true"></i> 데이터 모델링</span>
+                    </div>
+                </div>
+
+                <div class="skill-category neon-green" data-aos>
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-cloud-arrow-up" aria-hidden="true"></i></div>
+                        <h3>Cloud · DevOps · Tools</h3>
+                    </div>
+                    <p class="skill-description">Docker와 GitHub Actions로 빌드를 검증하고, AWS·Render·Netlify에 배포합니다. 생성형 AI는 개발 파트너로 활용합니다.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-aws" aria-hidden="true"></i> AWS EC2 · RDS · S3</span>
+                        <span class="skill-tag"><i class="fab fa-docker" aria-hidden="true"></i> Docker</span>
+                        <span class="skill-tag"><i class="fab fa-github" aria-hidden="true"></i> GitHub Actions</span>
+                        <span class="skill-tag"><i class="fas fa-globe" aria-hidden="true"></i> Netlify · Render</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt" aria-hidden="true"></i> Git</span>
+                        <span class="skill-tag"><i class="fas fa-terminal" aria-hidden="true"></i> Codex · Claude · Gemini</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 03. PROJECTS</span>
+                <h2 class="section-title">CHALLENGE → STRATEGY → RESULT</h2>
+                <p class="section-sub">모든 프로젝트는 비즈니스 과제에서 출발해, 데이터 기반 전략을 거쳐, 측정 가능한 성과로 끝납니다.</p>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Project 1: Nomadpick -->
+                <article class="portfolio-card" data-aos>
+                    <div class="portfolio-image">
+                        <img src="images/nomadpick.webp" width="1080" height="675" alt="노마드픽 여행 특가 추천 화면" class="portfolio-img" loading="lazy" decoding="async">
+                        <span class="portfolio-badge">DATA · RPA · 추천</span>
+                        <div class="portfolio-overlay">
+                            <a href="https://nomadpick.onrender.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link-btn" aria-label="Nomadpick 실제 서비스 새 창 열기">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> LIVE SERVICE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-head">
+                            <span class="portfolio-no">PRJ_01</span>
+                            <h3>노마드픽 · Nomadpick</h3>
+                            <p class="portfolio-summary">3개 여행사 특가를 자동 수집해 취향 기반으로 추천하는 여행 데이터 서비스</p>
+                        </div>
+                        <div class="csr">
+                            <div class="csr-row csr-challenge">
+                                <span class="csr-label">Challenge</span>
+                                <p>여행 특가는 여러 여행사에 흩어져 있고 가격·일정이 수시로 바뀌어, 사용자는 비교에 긴 시간을 쓰면서도 '지금 사도 되는지' 판단할 근거가 없었습니다.</p>
+                            </div>
+                            <div class="csr-row csr-strategy">
+                                <span class="csr-label">Strategy</span>
+                                <p>Playwright RPA로 3개 여행사 특가를 정기 수집 → pandas 정제 후 TiDB 표준 스키마 적재 → 지역·예산·출발월 필터와 코사인 유사도 기반 Top 10 추천, 가격 추이 차트·관심 상품 알림으로 '구매 근거'를 제공했습니다.</p>
+                            </div>
+                            <div class="csr-row csr-result">
+                                <span class="csr-label">Result</span>
+                                <ul class="csr-metrics">
+                                    <li><strong>-95%</strong><span>특가 비교 소요 시간<br>(약 2시간 → 5분)</span></li>
+                                    <li><strong>3→1</strong><span>흩어진 여행사 데이터를<br>단일 화면으로 통합</span></li>
+                                    <li><strong>Top 10</strong><span>추천 이유가 함께 제공되는<br>맞춤 상품 추천</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>FastAPI</span><span>Playwright</span><span>pandas</span><span>scikit-learn</span><span>TiDB</span><span>Plotly</span>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://nomadpick.onrender.com/" target="_blank" rel="noopener noreferrer" class="portfolio-cta">실제 서비스 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="https://fsclass-n.github.io/nomadpick/" target="_blank" rel="noopener noreferrer" class="portfolio-cta">GitHub 소개 <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Picktiming -->
+                <article class="portfolio-card" data-aos>
+                    <div class="portfolio-image">
+                        <img src="images/picktiming.webp" width="1080" height="675" alt="픽타이밍 가격 비교와 구매 타이밍 분석 화면" class="portfolio-img" loading="lazy" decoding="async">
+                        <span class="portfolio-badge">PRICING · AI · 분석</span>
+                        <div class="portfolio-overlay">
+                            <a href="https://picktiming.onrender.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link-btn" aria-label="Picktiming 실제 서비스 새 창 열기">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> LIVE SERVICE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-head">
+                            <span class="portfolio-no">PRJ_02</span>
+                            <h3>픽타이밍 · Picktiming</h3>
+                            <p class="portfolio-summary">실구매가와 가격 흐름을 분석해 '언제 살지'를 점수로 알려주는 구매 의사결정 서비스</p>
+                        </div>
+                        <div class="csr">
+                            <div class="csr-row csr-challenge">
+                                <span class="csr-label">Challenge</span>
+                                <p>같은 상품도 판매처·배송비에 따라 실구매가가 달라지고 가격 변동이 잦아, 소비자는 '어디서, 언제 사야 유리한지' 합리적으로 판단하기 어려웠습니다.</p>
+                            </div>
+                            <div class="csr-row csr-strategy">
+                                <span class="csr-label">Strategy</span>
+                                <p>배송비를 포함한 실구매가 기준 비교 모델을 설계하고, 7·30·90일 가격 이력을 중복 없이 적재해 통계 기반 구매 타이밍 점수를 산출했습니다. Gemini로 점수 해석 상담을 제공하되 숫자 검증·대체 설명 로직으로 신뢰도를 지켰습니다.</p>
+                            </div>
+                            <div class="csr-row csr-result">
+                                <span class="csr-label">Result</span>
+                                <ul class="csr-metrics">
+                                    <li><strong>3구간</strong><span>7·30·90일 가격 흐름 기반<br>구매 적기 점수화</span></li>
+                                    <li><strong>0건</strong><span>가격 이력 중복 저장<br>(멱등 적재 로직)</span></li>
+                                    <li><strong>100%</strong><span>AI 응답 숫자 검증 통과 시에만<br>상담 결과 노출</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-tech">
+                            <span>React</span><span>FastAPI</span><span>TiDB</span><span>scikit-learn</span><span>Gemini</span><span>Docker</span>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://picktiming.onrender.com/" target="_blank" rel="noopener noreferrer" class="portfolio-cta">실제 서비스 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="https://fsclass-n.github.io/picktiming/" target="_blank" rel="noopener noreferrer" class="portfolio-cta">GitHub 소개 <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Homepick -->
+                <article class="portfolio-card" data-aos>
+                    <div class="portfolio-image">
+                        <img src="images/homepick.webp" width="1080" height="675" alt="홈픽 부동산 플랫폼 화면" class="portfolio-img" loading="lazy" decoding="async">
+                        <span class="portfolio-badge">PLATFORM · SPRING · CI</span>
+                        <div class="portfolio-overlay">
+                            <a href="https://homepick.onrender.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link-btn" aria-label="Homepick 실제 서비스 새 창 열기">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> LIVE SERVICE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-head">
+                            <span class="portfolio-no">PRJ_03</span>
+                            <h3>홈픽 · Homepick</h3>
+                            <p class="portfolio-summary">조건 기반 부동산 추천을 목표로 회원·Q&amp;A·보안 기반을 먼저 구축한 플랫폼 프로젝트</p>
+                        </div>
+                        <div class="csr">
+                            <div class="csr-row csr-challenge">
+                                <span class="csr-label">Challenge</span>
+                                <p>부동산 추천은 개인정보와 신뢰가 핵심입니다. 추천 기능보다 먼저, 안전한 회원 관리와 문의 흐름이 갖춰진 '확장 가능한 서비스 기반'이 필요했습니다.</p>
+                            </div>
+                            <div class="csr-row csr-strategy">
+                                <span class="csr-label">Strategy</span>
+                                <p>Spring Boot로 Controller·Service·Repository 계층을 분리하고 BCrypt 비밀번호 저장·세션 인증·입력 검증·중복 ID 방지를 적용했습니다. JDBC 기반 Q&amp;A를 TiDB/MySQL에 저장하고, Docker + GitHub Actions로 빌드를 자동 검증해 배포 신뢰성을 확보했습니다.</p>
+                            </div>
+                            <div class="csr-row csr-result">
+                                <span class="csr-label">Result</span>
+                                <ul class="csr-metrics">
+                                    <li><strong>100%</strong><span>푸시마다 CI 빌드 검증<br>(수동 배포 오류 제거)</span></li>
+                                    <li><strong>3계층</strong><span>MVC 분리로 매물 수집·<br>AI 추천 확장 준비 완료</span></li>
+                                    <li><strong>0건</strong><span>평문 비밀번호 저장<br>(BCrypt 100% 적용)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-tech">
+                            <span>Java</span><span>Spring Boot</span><span>Thymeleaf</span><span>TiDB/MySQL</span><span>Docker</span><span>GitHub Actions</span>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://homepick.onrender.com/" target="_blank" rel="noopener noreferrer" class="portfolio-cta">실제 서비스 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="https://fsclass-n.github.io/homepick/" target="_blank" rel="noopener noreferrer" class="portfolio-cta">GitHub 소개 <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Personal Portfolio -->
+                <article class="portfolio-card" data-aos>
+                    <div class="portfolio-image">
+                        <img src="images/portfolio.webp" width="1080" height="675" alt="이오리 개인 포트폴리오 화면" class="portfolio-img" loading="lazy" decoding="async">
+                        <span class="portfolio-badge">BRANDING · UX · SEO</span>
+                        <div class="portfolio-overlay">
+                            <a href="https://leeori.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link-btn" aria-label="Personal Portfolio 실제 서비스 새 창 열기">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> LIVE SERVICE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-head">
+                            <span class="portfolio-no">PRJ_04</span>
+                            <h3>Personal Portfolio</h3>
+                            <p class="portfolio-summary">채용 담당자의 30초를 설계한 사이버펑크 테마 포트폴리오 (지금 보고 계신 사이트)</p>
+                        </div>
+                        <div class="csr">
+                            <div class="csr-row csr-challenge">
+                                <span class="csr-label">Challenge</span>
+                                <p>채용 담당자는 포트폴리오를 수십 초 안에 훑습니다. 핵심 역량과 성과가 즉시 읽히고, 연락까지의 마찰이 최소화되어야 면접 제안으로 이어집니다.</p>
+                            </div>
+                            <div class="csr-row csr-strategy">
+                                <span class="csr-label">Strategy</span>
+                                <p>Hero에 3개 역량 키워드와 지표를 배치하고, 모든 프로젝트를 Challenge → Strategy → Result 구조로 재작성했습니다. 터미널 스타일 컨택트로 이메일·전화·메시지 전송을 한 화면에서 처리하고 SEO·OG·접근성을 적용했습니다.</p>
+                            </div>
+                            <div class="csr-row csr-result">
+                                <span class="csr-label">Result</span>
+                                <ul class="csr-metrics">
+                                    <li><strong>3</strong><span>연락 경로 통합<br>(email · phone · send)</span></li>
+                                    <li><strong>0</strong><span>빌드 의존성<br>(순수 HTML·CSS·JS)</span></li>
+                                    <li><strong>100%</strong><span>모바일 · 태블릿 · PC<br>반응형 대응</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Web3Forms</span><span>Netlify</span>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://leeori.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio-cta">실제 서비스 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="https://github.com/fsclass-n/leeori" target="_blank" rel="noopener noreferrer" class="portfolio-cta">GitHub 저장소 <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 04. CONTACT</span>
+                <h2 class="section-title">OPEN TO INTERVIEW</h2>
+                <p class="section-sub">터미널에 <code>send</code>를 입력하면 바로 면접 제안을 보낼 수 있습니다. 명령어가 낯설다면 아래 버튼을 눌러도 됩니다.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos>
+                    <h3>데이터로 설득하는 개발자,<br><span class="hl-green">이오리</span>를 찾고 계신가요?</h3>
+                    <p>비즈니스 임팩트를 만드는 데이터·풀스택 포지션이라면 어디든 환영합니다.<br>면접 제안, 프로젝트 협업, 커피챗 모두 좋습니다.</p>
+                    <div class="contact-details">
+                        <a class="contact-item" href="mailto:leeori.dev@gmail.com">
+                            <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div>
+                                <span class="contact-label">email</span>
+                                <span class="contact-value">leeori.dev@gmail.com</span>
+                            </div>
+                        </a>
+                        <a class="contact-item" href="tel:010-1234-5678">
+                            <div class="contact-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+                            <div>
+                                <span class="contact-label">phone</span>
+                                <span class="contact-value">010-1234-5678</span>
+                            </div>
+                        </a>
+                        <a class="contact-item" href="https://github.com/fsclass-n" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                            <div>
+                                <span class="contact-label">github</span>
+                                <span class="contact-value">github.com/fsclass-n</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-status">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>STATUS: <strong>면접 가능 · 즉시 입사 가능</strong></span>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos>
+                    <div class="contact-modes" role="tablist" aria-label="연락 방식 선택">
+                        <button type="button" class="mode-btn active" id="modeTerminal" role="tab" aria-selected="true" aria-controls="terminalPanel"><i class="fas fa-terminal" aria-hidden="true"></i> TERMINAL</button>
+                        <button type="button" class="mode-btn" id="modeForm" role="tab" aria-selected="false" aria-controls="formPanel"><i class="fas fa-keyboard" aria-hidden="true"></i> FORM</button>
+                    </div>
+
+                    <!-- Terminal mode -->
+                    <div class="terminal contact-terminal" id="terminalPanel" role="tabpanel">
+                        <div class="terminal-bar">
+                            <span class="dot dot-pink"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                            <span class="terminal-title">ori@portfolio: ~/contact — bash</span>
+                        </div>
+                        <div class="terminal-screen" id="terminalScreen">
+                            <div class="terminal-output" id="terminalOutput" role="log" aria-live="polite" aria-relevant="additions"></div>
+                            <form class="terminal-input-line" id="terminalForm" autocomplete="off">
+                                <label for="terminalInput" class="terminal-prompt" id="terminalPrompt">ori@portfolio:~$</label>
+                                <input type="text" id="terminalInput" class="terminal-input" spellcheck="false" autocapitalize="off" autocorrect="off" aria-describedby="terminalHint" placeholder="help 입력 후 Enter">
+                            </form>
+                        </div>
+                        <div class="terminal-chips" id="terminalChips" aria-label="빠른 명령">
+                            <button type="button" class="chip" data-cmd="help">help</button>
+                            <button type="button" class="chip" data-cmd="whoami">whoami</button>
+                            <button type="button" class="chip" data-cmd="email">email</button>
+                            <button type="button" class="chip" data-cmd="phone">phone</button>
+                            <button type="button" class="chip chip-primary" data-cmd="send">send</button>
+                            <button type="button" class="chip" data-cmd="clear">clear</button>
+                        </div>
+                        <p class="terminal-hint" id="terminalHint">↑/↓ 명령 기록 · Tab 자동완성 · 대화형 입력 중 <code>cancel</code>로 취소</p>
+                    </div>
+
+                    <!-- Classic form mode (also the no-JS fallback) -->
+                    <div id="formPanel" class="form-panel" role="tabpanel" hidden>
+                        <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="08e0608d-ac1a-41d3-a8a0-63d4fc260f9e">
+                            <input type="hidden" name="subject" value="포트폴리오 사이트에서 새 메시지가 도착했습니다">
+                            <input type="hidden" name="from_name" value="이오리 포트폴리오">
+                            <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" aria-hidden="true" style="display:none;">
+                            <div class="form-group">
+                                <label for="name">name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    <input type="text" id="name" name="name" placeholder="이름 또는 회사명" autocomplete="name" maxlength="100" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">subject <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-heading" aria-hidden="true"></i>
+                                    <input type="text" id="title" name="title" placeholder="예: [면접 제안] 데이터 분석 포지션" maxlength="200" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">contact <span class="required">*</span></label>
+                                <div class="form-row">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                                        <input type="email" id="email" name="email" placeholder="이메일" aria-label="이메일 (필수)" autocomplete="email" required>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-phone" aria-hidden="true"></i>
+                                        <input type="tel" id="phone" name="phone" placeholder="전화번호 (선택)" aria-label="전화번호 (선택)" autocomplete="tel">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">message <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                                    <textarea id="message" name="message" rows="5" placeholder="포지션, 일정, 궁금한 점을 자유롭게 적어 주세요" maxlength="10000" required></textarea>
+                                </div>
+                            </div>
+                            <p id="formError" class="form-error" role="alert" hidden>메시지를 전송하지 못했습니다. 내용을 확인하고 다시 시도해 주세요. <a href="mailto:leeori.dev@gmail.com">이메일로 직접 연락하기</a></p>
+                            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                                <span class="btn-text"><i class="fas fa-paper-plane" aria-hidden="true"></i> ./send_message</span>
+                                <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin" aria-hidden="true"></i> sending...</span>
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="form-success" role="status" tabindex="-1" style="display:none;">
+                            <div class="success-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+                            <h3>MESSAGE SENT ■</h3>
+                            <p>메시지가 정상적으로 전송되었습니다. 빠른 시일 내에 답변 드리겠습니다.</p>
+                            <button class="btn btn-outline" id="sendAnother" type="button">
+                                <i class="fas fa-redo" aria-hidden="true"></i> 새 메시지 보내기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><span class="logo-prompt">~/</span>ORI<span class="logo-cursor">_</span></div>
+                <p class="footer-text">Designed &amp; Built by 이오리 · <span class="footer-mono">data → decision → product</span></p>
+                <div class="footer-links">
+                    <a href="tel:01012345678" aria-label="전화 걸기"><i class="fas fa-phone" aria-hidden="true"></i></a>
+                    <a href="mailto:leeori.dev@gmail.com" aria-label="이메일 보내기"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://github.com/fsclass-n" target="_blank" rel="noopener noreferrer" aria-label="GitHub 열기"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Lee Ori. All Rights Reserved. <span class="footer-mono">// v2.0 cyberpunk</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="topButton" class="top-button" type="button" aria-label="맨 위로 이동" hidden><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
